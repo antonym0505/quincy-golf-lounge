@@ -73,6 +73,31 @@ The Trackman integration is **stubbed** and ready for implementation once API cr
 - `src/hooks/useTrackman.ts` - React hook for booking data
 - `src/components/booking/BookingWidget.tsx` - Booking UI component
 
+## Deployment
+
+This project is configured for deployment on Railway.
+
+### Environments
+
+| Branch | Environment | Description |
+|--------|-------------|-------------|
+| `develop` | Development | Testing and staging |
+| `main` | Production | Live site (when ready) |
+
+### Railway Setup
+
+1. Create a new project on [Railway](https://railway.app)
+2. Connect your GitHub repository
+3. Configure branch deployments:
+   - `develop` branch → Development environment
+4. Railway will auto-deploy on push using `railway.toml` config
+
+### Environment Variables
+
+Set these in Railway dashboard for each environment:
+- `VITE_TRACKMAN_API_URL` - Trackman API endpoint
+- `VITE_TRACKMAN_SUBSCRIPTION_KEY` - Your Trackman key
+
 ## License
 
 Private - All rights reserved.
