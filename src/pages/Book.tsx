@@ -11,7 +11,7 @@ export default function Book() {
                 <div className="max-w-2xl mx-auto">
                     <Link
                         to="/"
-                        className="inline-flex items-center text-green-600 hover:text-green-700 mb-8"
+                        className="inline-flex items-center text-brand-green hover:opacity-80 transition-opacity mb-8"
                     >
                         ← Back to Home
                     </Link>
@@ -33,7 +33,7 @@ export default function Book() {
                         <ul className="space-y-3 text-gray-600">
                             {facility.bookingInfo.map((info) => (
                                 <li key={info} className="flex items-start gap-2">
-                                    <span className="text-green-600">✓</span>
+                                    <span className="text-brand-green">✓</span>
                                     <span>{info}</span>
                                 </li>
                             ))}

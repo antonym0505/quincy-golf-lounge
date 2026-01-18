@@ -2,5 +2,9 @@
 
 /* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
+    --color-brand-green: #1b3022;
+    --color-brand-green-dark: #0c140e;
+    --color-brand-cream: #efebce;
+    --color-brand-gold: #d7ce93;
     --filter-leaf: invert(50%) sepia(100%) saturate(200%) hue-rotate(90deg);
 }

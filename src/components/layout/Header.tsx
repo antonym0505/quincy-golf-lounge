@@ -7,8 +7,8 @@ export default function Header() {
     return (
         <header className="w-full bg-white shadow-sm">
             <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-                <Link to="/" className="text-xl font-bold text-gray-900">
-                    {facility.name}
+                <Link to="/" className="flex items-center gap-2">
+                    <img src={facility.logos.color} alt={facility.name} className="h-12 w-auto" />
                 </Link>
 
                 <div className="flex items-center gap-6">
@@ -26,7 +26,7 @@ export default function Header() {
                     </a>
                     <Link
                         to="/book"
-                        className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                        className="bg-brand-green text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
                     >
                         Book a Bay
                     </Link>

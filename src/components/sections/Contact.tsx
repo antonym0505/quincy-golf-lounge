@@ -5,7 +5,7 @@ export default function Contact() {
     const { address } = facility;
 
     return (
-        <section className="py-20 bg-gray-50" id="contact">
+        <section className="py-20 bg-brand-cream/20" id="contact">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
                     Visit Us
@@ -37,7 +37,7 @@ export default function Contact() {
                                     <div className="font-medium text-gray-900">Phone</div>
                                     <a
                                         href={`tel:${facility.phone.replace(/\D/g, '')}`}
-                                        className="text-green-600 hover:text-green-700"
+                                        className="text-brand-green hover:opacity-80 transition-opacity"
                                     >
                                         {facility.phone.replace(/.+(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3')}
                                     </a>
@@ -50,7 +50,7 @@ export default function Contact() {
                                     <div className="font-medium text-gray-900">Email</div>
                                     <a
                                         href={`mailto:${facility.email}`}
-                                        className="text-green-600 hover:text-green-700"
+                                        className="text-brand-green hover:opacity-80 transition-opacity"
                                     >
                                         {facility.email}
                                     </a>

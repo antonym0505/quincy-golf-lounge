@@ -5,12 +5,15 @@ export default function Footer() {
     const { address } = facility;
 
     return (
-        <footer className="w-full bg-gray-900 text-white py-12">
+        <footer className="w-full bg-brand-green-dark text-white py-12">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Business Info */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4">{facility.name}</h3>
+                        <div className="mb-6">
+                            {/* <img src={facility.logos.white} alt={facility.name} className="h-12 w-auto" /> */}
+                            <img src={facility.logos.color} alt={facility.name} className="h-12 w-auto" />
+                        </div>
                         <p className="text-gray-400">
                             Premium indoor golf simulator experience in {address.city}.
                         </p>

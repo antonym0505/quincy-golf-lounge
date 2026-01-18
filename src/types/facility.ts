@@ -46,6 +46,11 @@ export interface FacilityInfo {
     name: string;
     tagline: string;
     description: string;
+    logos: {
+        color: string;
+        white: string;
+        black: string;
+    };
 
     // Contact
     address: Address;

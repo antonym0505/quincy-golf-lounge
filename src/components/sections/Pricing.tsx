@@ -5,7 +5,7 @@ export default function Pricing() {
     const SPECIAL_PRICING = import.meta.env.SPECIAL_PRICING || 'Opening Special';
 
     return (
-        <section className="py-20 bg-white" id="pricing">
+        <section className="py-20 bg-brand-cream/10" id="pricing">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
                     Pricing
@@ -20,8 +20,8 @@ export default function Pricing() {
                         <div
                             key={plan.name}
                             className={`rounded-xl p-8 relative ${plan.popular
-                                ? 'bg-green-600 text-white ring-4 ring-green-600 ring-offset-4'
-                                : 'bg-gray-50'
+                                ? 'bg-brand-green text-white ring-4 ring-brand-green ring-offset-4'
+                                : 'bg-white'
                                 }`}
                         >
                             {(plan.popular || SPECIAL_PRICING) && (
@@ -36,7 +36,7 @@ export default function Pricing() {
                                 {plan.name}
                             </h3>
                             <div className="mb-4">
-                                <div className="flex flex-wrap items-baseline-last gap-2">
+                                <div className="flex flex-wrap items-baseline gap-2">
                                     <span
                                         className={`text-4xl font-bold ${plan.popular ? 'text-white' : 'text-gray-900'
                                             } ${SPECIAL_PRICING && plan.special ? 'text-2xl line-through opacity-70' : ''}`}
@@ -44,17 +44,17 @@ export default function Pricing() {
                                         {plan.price}
                                     </span>
                                     {SPECIAL_PRICING && plan.special && (
-                                        <span className={`text-4xl font-bold ${plan.popular ? 'text-white' : 'text-green-600'}`}>
+                                        <span className={`text-4xl font-bold ${plan.popular ? 'text-white' : 'text-brand-green'}`}>
                                             {plan.special}
                                         </span>
                                     )}
-                                    <span className={plan.popular ? 'text-green-100' : 'text-gray-500'}>
+                                    <span className={plan.popular ? 'text-brand-gold opacity-90' : 'text-gray-500'}>
                                         {plan.unit}
                                     </span>
                                 </div>
                             </div>
                             <p
-                                className={`mb-6 ${plan.popular ? 'text-green-100' : 'text-gray-600'
+                                className={`mb-6 ${plan.popular ? 'text-brand-gold opacity-90' : 'text-gray-600'
                                     }`}
                             >
                                 {plan.description}
@@ -63,7 +63,7 @@ export default function Pricing() {
                                 {plan.features.map((feature) => (
                                     <li key={feature} className="flex items-start gap-2">
                                         <span
-                                            className={plan.popular ? 'text-green-200' : 'text-green-600'}
+                                            className={plan.popular ? 'text-brand-gold' : 'text-brand-green'}
                                         >
                                             ✓
                                         </span>

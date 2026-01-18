@@ -4,7 +4,9 @@ export default function BookingPlaceholder() {
     const { facility } = useFacility();
     return (
         <div className="bg-gray-100 rounded-xl p-8 text-center">
-            <div className="text-4xl mb-4">🏌️</div>
+            <div className="mb-6">
+                <img src={facility.logos.color} alt={facility.name} className="h-16 w-auto mx-auto" />
+            </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Online Booking Coming Soon
             </h3>
@@ -14,7 +16,7 @@ export default function BookingPlaceholder() {
             <div className="space-y-4">
                 <a
                     href={`tel:${facility.phone}`}
-                    className="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+                    className="block bg-brand-green text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
                 >
                     Call {facility.phone.replace(/.+(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3')}
                 </a>

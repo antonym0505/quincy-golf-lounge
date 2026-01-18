@@ -1,4 +1,7 @@
 import leafIcon from '../assets/leaf.png';
+import logoColor from '../assets/logos/Quincy_Golf_Lounge_Logo_Color.png';
+import logoWhite from '../assets/logos/Quincy_Golf_Lounge_Logo_White.png';
+import logoBlack from '../assets/logos/Quincy_Golf_Lounge_Logo_Black.png';
 import type { FacilityInfo } from '../types/facility';
 
 /**
@@ -15,6 +18,11 @@ export const defaultFacility: FacilityInfo = {
     Whether you’re dialing in your swing, playing iconic courses, or just looking for a fun indoor activity, 
     our private simulator bay delivers a premium, comfortable experience year-round. 
     We are family-friendly, alcohol-free, and offer a juice bar and vending options on site.`,
+    logos: {
+        color: logoColor,
+        white: logoWhite,
+        black: logoBlack,
+    },
 
     // Contact
     address: {
