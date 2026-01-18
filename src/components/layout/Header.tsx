@@ -12,16 +12,16 @@ export default function Header() {
                 </Link>
 
                 <div className="flex items-center gap-6">
-                    <Link to="/" className="text-gray-600 hover:text-gray-900">
+                    <Link to="/" className="text-gray-600 hover:text-gray-900 hidden md:block">
                         Home
                     </Link>
-                    <a href="/#about" className="text-gray-600 hover:text-gray-900">
+                    <a href="/#about" className="text-gray-600 hover:text-gray-900 hidden md:block">
                         About
                     </a>
-                    <a href="/#pricing" className="text-gray-600 hover:text-gray-900">
+                    <a href="/#pricing" className="text-gray-600 hover:text-gray-900 hidden md:block">
                         Pricing
                     </a>
-                    <a href="/#events" className="text-gray-600 hover:text-gray-900">
+                    <a href="/#events" className="text-gray-600 hover:text-gray-900 hidden md:block">
                         Events
                     </a>
                     <Link
