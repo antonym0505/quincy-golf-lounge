@@ -1,30 +1,28 @@
+import { useFacility } from '../../context/FacilityContext';
+
 export default function About() {
+    const { facility } = useFacility();
+
     return (
-        <section id="about" className="py-20 bg-white">
+        <section className="py-20 bg-white" id="about">
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        About Quincy Golf Lounge
+                        About {facility.name}
                     </h2>
-                    <p className="text-lg text-gray-600 mb-8">
-                        Located in the heart of Quincy, we offer a premium indoor golf experience
-                        featuring state-of-the-art Trackman simulators. Whether you're looking to
-                        improve your game, enjoy a round with friends, or host a private event,
-                        our comfortable lounge atmosphere has everything you need.
+                    <p className="text-lg text-gray-600 mb-6">{facility.description}</p>
+                    <p className="text-gray-500 italic mb-8">
+                        Construction begins January 19, with a planned opening in late January.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                        <div className="text-center">
-                            <div className="text-4xl font-bold text-green-600 mb-2">4</div>
-                            <div className="text-gray-600">Simulator Bays</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-bold text-green-600 mb-2">200+</div>
-                            <div className="text-gray-600">Courses Available</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-bold text-green-600 mb-2">7</div>
-                            <div className="text-gray-600">Days a Week</div>
-                        </div>
+                        {facility.stats.map((stat) => (
+                            <div key={stat.label} className="text-center">
+                                <div className="text-4xl font-bold text-green-600 mb-2">
+                                    {stat.value}
+                                </div>
+                                <div className="text-gray-600">{stat.label}</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

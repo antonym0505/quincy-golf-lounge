@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
+import { useFacility } from '../context/FacilityContext';
 import BookingWidget from '../components/booking/BookingWidget';
 
 export default function Book() {
+    const { facility } = useFacility();
+
     return (
         <div className="py-16 bg-gray-50 min-h-screen">
             <div className="container mx-auto px-4">
@@ -17,7 +20,8 @@ export default function Book() {
                         Book a Bay
                     </h1>
                     <p className="text-gray-600 mb-8">
-                        Reserve your simulator bay and start playing on the world's best courses.
+                        Reserve your simulator bay and start playing on the world's best
+                        courses.
                     </p>
 
                     <BookingWidget />
@@ -27,22 +31,12 @@ export default function Book() {
                             Booking Information
                         </h2>
                         <ul className="space-y-3 text-gray-600">
-                            <li className="flex items-start gap-2">
-                                <span className="text-green-600">✓</span>
-                                <span>Each bay accommodates up to 6 players</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <span className="text-green-600">✓</span>
-                                <span>Clubs available for rent if needed</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <span className="text-green-600">✓</span>
-                                <span>Free cancellation up to 24 hours before your session</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <span className="text-green-600">✓</span>
-                                <span>Food and beverage service available throughout your session</span>
-                            </li>
+                            {facility.bookingInfo.map((info) => (
+                                <li key={info} className="flex items-start gap-2">
+                                    <span className="text-green-600">✓</span>
+                                    <span>{info}</span>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
