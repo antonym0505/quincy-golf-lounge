@@ -8,23 +8,25 @@ export default function BookingPlaceholder() {
                 <img src={facility.logos.color} alt={facility.name} className="h-16 w-auto mx-auto" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Online Booking Coming Soon
+                Book Your Session
             </h3>
             <p className="text-gray-600 mb-6">
-                Our online booking system is being set up. In the meantime, please contact us directly to reserve a bay.
+                Ready to play? Book your simulator bay online through our partner portal.
             </p>
             <div className="space-y-4">
                 <a
-                    href={`tel:${facility.phone}`}
-                    className="block bg-brand-green text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+                    href="https://www.yourgolfbooking.com/venues/quincy-golf-lounge/booking"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-brand-green text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-semibold"
                 >
-                    Call {facility.phone.replace(/.+(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3')}
+                    Book Online Now
                 </a>
                 <a
                     href={`mailto:${facility.email}`}
                     className="block border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors"
                 >
-                    Email info@quincygolflounge.com
+                    Email {facility.email}
                 </a>
             </div>
         </div>
