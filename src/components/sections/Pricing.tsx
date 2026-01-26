@@ -1,13 +1,13 @@
 export default function Pricing() {
     return (
-        <section className="py-20" id="pricing">
-            <div className="container mx-auto px-4 text-brand-cream">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-info text-center mb-12">
+        <section className="flex items-center justify-center min-h-[50vh] w-full" id="pricing">
+            <div className="container mx-auto p-4 text-brand-cream">
+                <h2 className="text-4xl font-info text-center mb-12">
                     Guest Information
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                     <div className="flex flex-col items-center">
-                        <h3 className="text-4xl font-info mb-2">Early Bird</h3>
+                        <h3 className="text-2xl font-info mb-2">Early Bird</h3>
                         <p className="text-xl font-main">
                             $39/hour
                         </p>
@@ -16,7 +16,7 @@ export default function Pricing() {
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h3 className="text-4xl font-info mb-2">Weekday</h3>
+                        <h3 className="text-2xl font-info mb-2">Weekday</h3>
                         <p className="text-xl font-main">
                             <s>$50</s>
                             &nbsp;$45/hour
@@ -26,7 +26,7 @@ export default function Pricing() {
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h3 className="text-4xl font-info mb-2">Weekday Evening</h3>
+                        <h3 className="text-2xl font-info mb-2">Weekday Evening</h3>
                         <p className="text-xl font-main">
                             <s>$60</s>
                             &nbsp;$55/hour
@@ -36,7 +36,7 @@ export default function Pricing() {
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h3 className="text-4xl font-info mb-2">Weekend</h3>
+                        <h3 className="text-2xl font-info mb-2">Weekend</h3>
                         <p className="text-xl font-main">
                             <s>$65</s>
                             &nbsp;$60/hour
