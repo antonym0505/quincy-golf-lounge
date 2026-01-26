@@ -1,27 +1,56 @@
-import { useFacility } from '../../context/FacilityContext';
-
 export default function Amenities() {
-    const { facility } = useFacility();
-
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-                    What We Offer
-                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {facility.amenities.map((amenity) => (
-                        <div
-                            key={amenity.title}
-                            className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-                        >
-                            <div className="text-4xl mb-4">{amenity.icon}</div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                                {amenity.title}
+                    <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat flex items-center justify-center p-12">
+                        <div className="bg-[#D9D9D947] text-[#1A2E1E] font-hero text-center w-full h-full">
+                            <h3 className="text-4xl p-4 line-clamp-2 text-visible">
+                                Trackman
+                                <br />
+                                Technology
                             </h3>
-                            <p className="text-gray-600">{amenity.description}</p>
+                            <p className="text-xl text-wrap p-2">
+                                Powered by Trackman, the industry leader in golf simulation used by professionals worldwide.
+                            </p>
                         </div>
-                    ))}
+                    </div>
+                    <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat flex items-center justify-center p-12">
+                        <div className="bg-[#D9D9D947] text-[#1A2E1E] font-hero text-center w-full h-full">
+                            <h3 className="text-4xl p-4 line-clamp-2 text-visible">
+                                Cannabis
+                                <br />
+                                Lounge
+                            </h3>
+                            <p className="text-xl text-wrap p-2">
+                                Offering products from Quincy Cannabis Company. Coming soon!
+                            </p>
+                        </div>
+                    </div>
+                    <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat flex items-center justify-center p-12">
+                        <div className="bg-[#D9D9D947] text-[#1A2E1E] font-hero text-center w-full h-full">
+                            <h3 className="text-4xl p-4 line-clamp-2 text-visible">
+                                Private
+                                <br />
+                                Bay
+                            </h3>
+                            <p className="text-xl text-wrap p-2">
+                                Reserve your own bay for practice or play. Ideal for individuals and small groups up to 4 players.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat flex items-center justify-center p-12">
+                        <div className="bg-[#D9D9D947] text-[#1A2E1E] font-hero text-center w-full h-full">
+                            <h3 className="text-4xl p-4 line-clamp-2 text-visible">
+                                Juice Bar &
+                                <br />
+                                Snacks
+                            </h3>
+                            <p className="text-xl text-wrap p-2">
+                                Fresh juices and vending options available. We are an alcohol-free environment.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
