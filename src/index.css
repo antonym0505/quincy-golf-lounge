@@ -1,5 +1,54 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "PP Editorial New";
+    src: url("./assets/fonts/PPEditorialNew-Ultralight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PP Editorial New";
+    src: url("./assets/fonts/PPEditorialNew-UltralightItalic.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PP Editorial New";
+    src: url("./assets/fonts/PPEditorialNew-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PP Editorial New";
+    src: url("./assets/fonts/PPEditorialNew-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PP Editorial New";
+    src: url("./assets/fonts/PPEditorialNew-Ultrabold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PP Editorial New";
+    src: url("./assets/fonts/PPEditorialNew-UltraboldItalic.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 /* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
     /* Using colors from user's tailwind.config.ts attempt */
@@ -7,8 +56,8 @@
     --color-brand-cream: #f4e3ce;
     --color-brand-green: #2f5236;
     --color-dark: #1f1d1c;
-    --font-main: Libre Caslon Display, serif;
-    --font-hero: PP Editorial New, serif;
-    --font-info: Libre Bodoni, serif;
+    --font-main: "Libre Caslon Display", serif;
+    --font-hero: "PP Editorial New", serif;
+    --font-info: "Libre Bodoni", serif;
     --shadow-info: 0px 4px 4px 0px #00000040;
 }

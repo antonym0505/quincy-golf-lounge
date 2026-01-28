@@ -1,6 +1,6 @@
 export default function Pricing() {
     return (
-        <section className="flex items-center justify-center min-h-[50vh] w-full" id="pricing">
+        <section className="flex items-center justify-center h-half w-full my-8" id="pricing">
             <div className="container mx-auto p-4 text-brand-cream">
                 <h2 className="text-4xl font-info text-center mb-12">
                     Guest Information
