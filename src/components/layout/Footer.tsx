@@ -3,9 +3,9 @@ import Logo from '../../assets/Quincy_Golf_Lounge_Logo.svg';
 export default function Footer() {
     return (
         <footer className="w-full py-12 text-brand-cream bg-[#1A2E1E]">
-            <div className="container px-12">
+            <div className="container px-12 mx-auto">
                 {/* Info Section */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-3xl">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-3xl mx-auto">
                     <div className="flex-shrink-0 h-full justify-self-center md:justify-self-start">
                         <img src={Logo} alt="Quincy Golf Lounge" className="h-full w-auto md:shadow-info" />
                     </div>
