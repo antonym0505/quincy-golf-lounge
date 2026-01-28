@@ -14,7 +14,7 @@ export const defaultFacility: FacilityInfo = {
     // Branding
     name: 'Quincy Golf Lounge',
     tagline: 'Play. Practice. Chill.',
-    description: `Quincy Golf Lounge brings world-class TrackMan golf simulation to the heart of Quincy. 
+    description: `Quincy Golf Lounge brings world-class Trackman golf simulation to the heart of Quincy. 
     Whether you’re dialing in your swing, playing iconic courses, or just looking for a fun indoor activity, 
     our private simulator bay delivers a premium, comfortable experience year-round. 
     We are family-friendly, alcohol-free, and offer a juice bar and vending options on site.`,
@@ -49,8 +49,8 @@ export const defaultFacility: FacilityInfo = {
     // Amenities
     amenities: [
         {
-            title: 'TrackMan Technology',
-            description: 'Powered by TrackMan, the industry leader in golf simulation used by professionals worldwide.',
+            title: 'Trackman Technology',
+            description: 'Powered by Trackman, the industry leader in golf simulation used by professionals worldwide.',
             icon: '🎯',
         },
         {
@@ -79,7 +79,7 @@ export const defaultFacility: FacilityInfo = {
             description: 'Before 12pm',
             features: [
                 'Up to 4 players per bay',
-                'TrackMan precision',
+                'Trackman precision',
                 'Weekend fun with friends',
             ],
             popular: true,
@@ -91,7 +91,7 @@ export const defaultFacility: FacilityInfo = {
             description: 'Mon–Thu (9am–4pm)',
             features: [
                 'Up to 4 players per bay',
-                'TrackMan precision',
+                'Trackman precision',
                 '200+ courses',
             ],
             special: '$45',
@@ -103,7 +103,7 @@ export const defaultFacility: FacilityInfo = {
             description: 'Mon–Thu (4pm–10pm)',
             features: [
                 'Up to 4 players per bay',
-                'TrackMan precision',
+                'Trackman precision',
                 'Perfect for after work',
             ],
             special: '$55',
@@ -115,7 +115,7 @@ export const defaultFacility: FacilityInfo = {
             description: 'Fri–Sun (All Day)',
             features: [
                 'Up to 4 players per bay',
-                'TrackMan precision',
+                'Trackman precision',
                 'Weekend fun with friends',
             ],
             special: '$60',
@@ -126,7 +126,7 @@ export const defaultFacility: FacilityInfo = {
     bookingInfo: [
         'Bay accommodates up to 4 players',
         'Club Rentals: $10 per session',
-        'TrackMan Combine: $20',
+        'Trackman Combine: $20',
         'Free cancellation up to 24 hours before your session',
     ],
 

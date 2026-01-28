@@ -1,55 +1,44 @@
-import { useFacility } from '../../context/FacilityContext';
+import Logo from '../../assets/Quincy_Golf_Lounge_Logo.svg';
 
 export default function Footer() {
-    const { facility } = useFacility();
-    const { address } = facility;
-
     return (
-        <footer className="w-full bg-brand-green-dark text-white py-12">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Business Info */}
-                    <div>
-                        <div className="mb-6">
-                            {/* <img src={facility.logos.white} alt={facility.name} className="h-12 w-auto" /> */}
-                            <img src={facility.logos.color} alt={facility.name} className="h-12 w-auto" />
-                        </div>
-                        <p className="text-gray-400">
-                            Premium indoor golf simulator experience in {address.city}.
+        <footer className="w-full py-12 text-brand-cream bg-[#1A2E1E]">
+            <div className="container px-12 mx-auto">
+                {/* Info Section */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-3xl mx-auto">
+                    <div className="flex-shrink-0 h-full justify-self-center md:justify-self-start">
+                        <img src={Logo} alt="Quincy Golf Lounge" className="h-full w-auto md:shadow-info" />
+                    </div>
+                    {/* Contact */}
+                    <div className="justify-self-center md:justify-self-start text-center md:text-left">
+                        <h4 className="font-info text-lg mb-2 uppercase tracking-wider">Contact</h4>
+                        <p className="font-main">
+                            <a href="tel:+17816331174" className="hover:opacity-80 transition-opacity">
+                                (781) 633-1174
+                            </a>
+                        </p>
+                        <p className="font-main lowercase">
+                            <a href="mailto:info@quincygolflounge.com" className="hover:opacity-80 transition-opacity">
+                                info@quincygolflounge.com
+                            </a>
                         </p>
                     </div>
-
                     {/* Hours */}
-                    <div>
-                        <h4 className="font-semibold mb-4">Hours</h4>
-                        <ul className="text-gray-400 space-y-2">
-                            {facility.hours.map((h) => (
-                                <li key={h.days}>
-                                    {h.days && `${h.days}: `}{h.open} - {h.close}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Contact */}
-                    <div>
-                        <h4 className="font-semibold mb-4">Contact</h4>
-                        <ul className="text-gray-400 space-y-2">
-                            <li>
-                                {address.street}, {address.city}, {address.state} {address.zip}
-                            </li>
-                            <li>Phone: {facility.phone.replace(/.+(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3')}</li>
-                            <li>Email: {facility.email}</li>
-                        </ul>
+                    <div className="justify-self-center md:justify-self-start text-center md:text-left">
+                        <h4 className="font-info text-lg mb-2 uppercase tracking-wider">Hours</h4>
+                        <p className="font-main">
+                            9am – 10pm
+                        </p>
+                        <p className="font-main">
+                            723 Washington St.
+                            <br />
+                            Quincy, MA 02169
+                        </p>
                     </div>
                 </div>
-
-                <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                    <p>
-                        &copy; {new Date().getFullYear()} {facility.name}. All rights
-                        reserved.
-                    </p>
-                </div>
+            </div>
+            <div className="pt-12 -mb-12 text-center text-brand-cream/40 font-main text-sm">
+                <p>&copy; {new Date().getFullYear()} Quincy Golf Lounge. All rights reserved.</p>
             </div>
         </footer>
     );
