@@ -19,3 +19,7 @@
   height: fit-content;
   max-height: 1440px;
 }
+
+td {
+  padding: 0.375rem;
+}

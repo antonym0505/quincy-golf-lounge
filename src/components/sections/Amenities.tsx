@@ -1,8 +1,8 @@
 export default function Amenities() {
     return (
-        <section className="flex items-center justify-center h-half w-full">
+        <section className="flex items-center justify-center h-half w-full mb-8">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                     <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat w-full max-w-[320px] mx-auto relative">
                         <div className="bg-[#D9D9D988] shadow-info text-[#1A2E1E] font-hero text-center absolute inset-8 flex flex-col items-center justify-center p-2 overflow-hidden">
                             <h3 className="flex-1 text-2xl m-auto leading-tight p-2">
@@ -15,7 +15,7 @@ export default function Amenities() {
                             </p>
                         </div>
                     </div>
-                    <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat w-full max-w-[320px] mx-auto relative">
+                    {/* <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat w-full max-w-[320px] mx-auto relative">
                         <div className="bg-[#D9D9D988] shadow-info text-[#1A2E1E] font-hero text-center absolute inset-8 flex flex-col items-center justify-center p-2 overflow-hidden">
                             <h3 className="flex-1 text-2xl m-auto leading-tight p-2">
                                 Cannabis
@@ -26,7 +26,7 @@ export default function Amenities() {
                                 Offering products from Quincy Cannabis Company. Coming soon!
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="aspect-square bg-[url('/src/assets/golf_ball.png')] bg-cover bg-no-repeat w-full max-w-[320px] mx-auto relative">
                         <div className="bg-[#D9D9D988] shadow-info text-[#1A2E1E] font-hero text-center absolute inset-8 flex flex-col items-center justify-center p-2 overflow-hidden">
                             <h3 className="flex-1 text-2xl m-auto leading-tight p-2">
