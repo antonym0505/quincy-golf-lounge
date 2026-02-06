@@ -11,65 +11,37 @@ export default function Memberships() {
                         <p className="text-xl font-main">
                             Unlimited Play Until 4pm
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-lg font-main">
                             Weekdays (excluding holidays)
                         </p>
-                        <p className="text-sm font-main">
-                            2 hours/day max.
-                        </p>
-                        <table className="my-2 mx-auto">
+                        <table className="font-main my-2 mx-auto text-lg whitespace-nowrap">
                             <tr>
-                                <td className="text-sm">
-                                    Monthly
-                                </td>
-                                <td className="text-sm">
-                                    $399
-                                </td>
-                                {/* <td className="text-xs text-balance">
-                                    Valid for 1 month from signup
-                                </td> */}
+                                <td>Monthly</td>
+                                <td>$399</td>
                             </tr>
                             <tr>
-                                <td className="text-sm whitespace-nowrap">
-                                    3 Month
-                                </td>
-                                <td className="text-sm">
-                                    $1200
-                                </td>
-                                {/* <td className="text-xs text-balance">
-                                    Valid for 6 months from signup
-                                </td> */}
+                                <td>3 Month</td>
+                                <td>$1200</td>
                             </tr>
                             <tr>
-                                <td className="text-sm whitespace-nowrap">
-                                    6 Month
-                                </td>
-                                <td className="text-sm">
-                                    $2000
-                                </td>
-                                {/* <td className="text-xs text-balance">
-                                    Valid for 6 months from signup
-                                </td> */}
+                                <td>6 Month</td>
+                                <td>$2000</td>
                             </tr>
                             <tr>
-                                <td className="text-sm">
-                                    Annually
-                                </td>
-                                <td className="text-sm">
-                                    $2600
-                                </td>
-                                {/* <td className="text-xs text-balance">
-                                    Valid for 12 months from signup
-                                </td> */}
+                                <td>Annually</td>
+                                <td>$2600</td>
                             </tr>
                         </table>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
+                            2 hours/day max.
+                        </p>
+                        <p className="text-md font-main">
                             $10 per guest (4 people max.)
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             Member must be present
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             No refunds
                         </p>
                     </div>
@@ -78,53 +50,37 @@ export default function Memberships() {
                         <p className="text-xl font-main">
                             Unlimited Play
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-lg font-main">
                             Unlimited Guests
                         </p>
-                        <p className="text-sm font-main">
-                            2 hours/day max.
-                        </p>
-                        <table className="my-2 mx-auto">
+                        <table className="font-main my-2 mx-auto text-lg whitespace-nowrap">
                             <tr>
-                                <td className="text-sm">
-                                    Monthly
-                                </td>
-                                <td className="text-sm">
-                                    $550
-                                </td>
+                                <td>Monthly</td>
+                                <td>$550</td>
                             </tr>
                             <tr>
-                                <td className="text-sm whitespace-nowrap">
-                                    3 Month
-                                </td>
-                                <td className="text-sm">
-                                    $1400
-                                </td>
+                                <td>3 Month</td>
+                                <td>$1400</td>
                             </tr>
                             <tr>
-                                <td className="text-sm whitespace-nowrap">
-                                    6 Month
-                                </td>
-                                <td className="text-sm">
-                                    $2100
-                                </td>
+                                <td>6 Month</td>
+                                <td>$2100</td>
                             </tr>
                             <tr>
-                                <td className="text-sm">
-                                    Annually
-                                </td>
-                                <td className="text-sm">
-                                    $2900
-                                </td>
+                                <td>Annually</td>
+                                <td>$2900</td>
                             </tr>
                         </table>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
+                            2 hours/day max.
+                        </p>
+                        <p className="text-md font-main">
                             $0 per guest (4 people max.)
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             Member must be present
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             No refunds
                         </p>
                     </div>

@@ -11,13 +11,13 @@ export default function Pricing() {
                         <p className="text-xl font-main">
                             Mon–Thu (9am–4pm)
                         </p>
-                        <p className="text-xl font-main">
+                        <p className="text-lg font-main">
                             $35/hour
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             $10 per additional player
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             4 people max.
                         </p>
                     </div>
@@ -26,28 +26,28 @@ export default function Pricing() {
                         <p className="text-xl font-main">
                             Mon–Thu (4pm–10pm)
                         </p>
-                        <p className="text-xl font-main">
+                        <p className="text-lg font-main">
                             $45/hour
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             $10 per additional player
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             4 people max.
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
                         <h3 className="text-2xl font-info mb-2">Weekend</h3>
-                        <p className="text-xl font-main">
+                        <p className="text-xl font-main text-balance text-center">
                             Fri–Sun & Holidays (9am–10pm)
                         </p>
-                        <p className="text-xl font-main">
+                        <p className="text-lg font-main">
                             $60/hour
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             $10 per additional player
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             4 people max.
                         </p>
                     </div>
@@ -56,10 +56,10 @@ export default function Pricing() {
                         <p className="text-xl font-main">
                             Rental Clubs Available
                         </p>
-                        <p className="text-xl font-main">
+                        <p className="text-lg font-main">
                             $25
                         </p>
-                        <p className="text-sm font-main">
+                        <p className="text-md font-main">
                             Left-handed and right-handed sets
                         </p>
                     </div>

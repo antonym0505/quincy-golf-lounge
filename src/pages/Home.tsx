@@ -10,7 +10,7 @@ export default function Home() {
             <Amenities />
             <Pricing />
             <Memberships />
-            <div className="my-8 text-brand-cream text-center w-full">
+            <div className="font-main my-8 p-4 text-brand-cream text-center text-lg w-full">
                 For private events, including corporate gatherings and celebrations, please call to discuss details.
             </div>
         </>
