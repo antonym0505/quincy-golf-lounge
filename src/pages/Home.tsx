@@ -1,6 +1,7 @@
 import Hero from '../components/sections/Hero';
 import Amenities from '../components/sections/Amenities';
 import Pricing from '../components/sections/Pricing';
+import Memberships from '../components/sections/Memberships';
 
 export default function Home() {
     return (
@@ -8,6 +9,10 @@ export default function Home() {
             <Hero />
             <Amenities />
             <Pricing />
+            <Memberships />
+            <div className="font-main my-8 p-4 text-brand-cream text-center text-lg w-full">
+                For private events, including corporate gatherings and celebrations, please call to discuss details.
+            </div>
         </>
     );
 }
