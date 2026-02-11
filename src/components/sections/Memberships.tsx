@@ -17,7 +17,7 @@ export default function Memberships() {
                         <table className="font-main my-2 mx-auto text-lg whitespace-nowrap">
                             <tr>
                                 <td>Monthly</td>
-                                <td>$399</td>
+                                <td>$450</td>
                             </tr>
                             <tr>
                                 <td>3 Month</td>
