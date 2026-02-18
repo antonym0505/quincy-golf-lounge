@@ -6,7 +6,7 @@ export default function Hero() {
                 <br />
                 Trackman technology, private simulator play,
                 <br />
-                and a relaxed, alcohol-free environment.
+                and a relaxed environment.
             </p>
         </section>
     );
