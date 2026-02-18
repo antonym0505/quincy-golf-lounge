@@ -18,8 +18,8 @@ export default function Footer() {
                             </a>
                         </p>
                         <p className="font-main lowercase">
-                            <a href="mailto:info@quincygolflounge.com" className="hover:opacity-80 transition-opacity">
-                                info@quincygolflounge.com
+                            <a href="mailto:quincygolflounge@gmail.com" className="hover:opacity-80 transition-opacity">
+                                quincygolflounge@gmail.com
                             </a>
                         </p>
                     </div>
@@ -29,11 +29,16 @@ export default function Footer() {
                         <p className="font-main">
                             9am – 10pm
                         </p>
-                        <p className="font-main">
+                        <a
+                            className="font-main"
+                            href="https://maps.app.goo.gl/KxG7vSKhJGd6eJS56"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             723 Washington St.
                             <br />
                             Quincy, MA 02169
-                        </p>
+                        </a>
                     </div>
                 </div>
             </div>
