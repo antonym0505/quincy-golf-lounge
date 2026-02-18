@@ -47,7 +47,7 @@ export default function Amenities() {
                                 Snacks
                             </h3>
                             <p className="flex-2 text-lg leading-tight p-2 text-balance">
-                                Fresh juices and vending options available. We are an alcohol-free environment.
+                                Fresh juices and vending options available.
                             </p>
                         </div>
                     </div>
