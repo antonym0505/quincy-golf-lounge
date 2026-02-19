@@ -45,7 +45,7 @@ export default function Footer() {
                         <h4 className="font-info text-lg mb-2 uppercase tracking-wider">Follow</h4>
                         <div className="flex justify-center md:justify-start">
                             <a
-                                href="https://www.instagram.com"
+                                href="https://www.instagram.com/quincygolflounge"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:opacity-80 transition-opacity"
