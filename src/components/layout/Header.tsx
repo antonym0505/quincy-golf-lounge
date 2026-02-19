@@ -5,7 +5,7 @@ import NameWhite from '../../assets/name_white.svg';
 
 export default function Header() {
     return (
-        <header className="h-screen bg-[url('/src/assets/golf_swing_ultrawide.webp')] bg-cover bg-center bg-top bg-no-repeat flex flex-col">
+        <header className="h-screen bg-[url('/src/assets/golf_swing.png')] bg-cover lg:bg-contain bg-center bg-no-repeat flex flex-col">
             <nav className="container px-4 py-4 flex justify-center mx-auto">
                 <Link to="/">
                     <img src={TransparentLogo} alt="Quincy Golf Lounge" className="h-12 w-auto" />
