@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="w-full py-12 text-brand-cream bg-[#1A2E1E]">
             <div className="container px-12 mx-auto">
                 {/* Info Section */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-3xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-9 lg:gap-12 max-w-5xl mx-auto">
                     <div className="flex-shrink-0 h-full justify-self-center md:justify-self-start">
                         <img src={Logo} alt="Quincy Golf Lounge" className="h-full w-auto md:shadow-info" />
                     </div>
@@ -22,7 +22,28 @@ export default function Footer() {
                                 quincygolflounge@gmail.com
                             </a>
                         </p>
-                        <div className="mt-4 flex justify-center md:justify-start">
+                    </div>
+                    {/* Hours */}
+                    <div className="justify-self-center md:justify-self-start text-center md:text-left">
+                        <h4 className="font-info text-lg mb-2 uppercase tracking-wider">Visit</h4>
+                        <p className="font-main">
+                            9am – 10pm
+                        </p>
+                        <a
+                            className="font-main"
+                            href="https://maps.app.goo.gl/KxG7vSKhJGd6eJS56"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            723 Washington St.
+                            <br />
+                            Quincy, MA 02169
+                        </a>
+                    </div>
+                    {/* Follow */}
+                    <div className="justify-self-center md:justify-self-start text-center md:text-left">
+                        <h4 className="font-info text-lg mb-2 uppercase tracking-wider">Follow</h4>
+                        <div className="flex justify-center md:justify-start">
                             <a
                                 href="https://www.instagram.com"
                                 target="_blank"
@@ -47,23 +68,6 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
-                    </div>
-                    {/* Hours */}
-                    <div className="justify-self-center md:justify-self-start text-center md:text-left">
-                        <h4 className="font-info text-lg mb-2 uppercase tracking-wider">Hours</h4>
-                        <p className="font-main">
-                            9am – 10pm
-                        </p>
-                        <a
-                            className="font-main"
-                            href="https://maps.app.goo.gl/KxG7vSKhJGd6eJS56"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            723 Washington St.
-                            <br />
-                            Quincy, MA 02169
-                        </a>
                     </div>
                 </div>
             </div>
