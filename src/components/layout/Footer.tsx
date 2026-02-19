@@ -22,6 +22,31 @@ export default function Footer() {
                                 quincygolflounge@gmail.com
                             </a>
                         </p>
+                        <div className="mt-4 flex justify-center md:justify-start">
+                            <a
+                                href="https://www.instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:opacity-80 transition-opacity"
+                                aria-label="Instagram"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     {/* Hours */}
                     <div className="justify-self-center md:justify-self-start text-center md:text-left">
@@ -42,7 +67,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="pt-12 -mb-12 text-center text-brand-cream/40 font-main text-sm">
+            <div className="pt-16 pb-8 text-center text-brand-cream/40 font-main text-sm mt-12 border-t border-brand-cream/5">
                 <p>&copy; {new Date().getFullYear()} Quincy Golf Lounge. All rights reserved.</p>
             </div>
         </footer>
