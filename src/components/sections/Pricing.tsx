@@ -42,8 +42,10 @@ export default function Pricing() {
                     <div className="flex flex-col items-center text-brand-cream text-center">
                         <h3 className="text-2xl lg:text-3xl font-info mb-6 border-b border-brand-cream/20 w-full pb-3">Extras</h3>
                         <p className="text-xl lg:text-2xl font-main">Rental Clubs</p>
-                        <p className="text-sm lg:text-base font-main opacity-70">(Lefty & Righty)</p>
+                        <p className="text-sm lg:text-base font-main opacity-70">Lefty & Righty</p>
                         <p className="text-xl lg:text-2xl font-main mt-4 mb-6">$25/set</p>
+                        <p className="text-xl lg:text-2xl font-main">Club Regripping</p>
+                        <p className="text-sm lg:text-base font-main opacity-70">Pricing coming soon</p>
                         <div className="space-y-1 opacity-90">
                         </div>
                     </div>
