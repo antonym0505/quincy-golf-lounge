@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* stylelint-disable-next-line at-rule-no-unknown */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @font-face {
     font-family: "PP Editorial New";
     src: url("./assets/fonts/PPEditorialNew-Ultralight.otf") format("opentype");
@@ -51,13 +54,24 @@
 
 /* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
-    /* Using colors from user's tailwind.config.ts attempt */
-    --color-brand-black: #1f1d1c;
     --color-brand-cream: #f4e3ce;
     --color-brand-green: #2f5236;
-    --color-dark: #1f1d1c;
+    --color-brand-dark: #1a2e1e;
+    --color-background: #fefefe;
     --font-main: "Libre Caslon Display", serif;
     --font-hero: "PP Editorial New", serif;
     --font-info: "Libre Bodoni", serif;
     --shadow-info: 0px 4px 4px 0px #00000040;
+}
+
+@layer base {
+
+    /* 
+     * Dark Mode Theme overrides
+     * By re-defining the variables here, any existing Tailwind class (e.g. `bg-brand-cream`) 
+     * automatically adopts the dark mode values without changing the TSX code!
+     */
+    :root[data-theme="dark"] {
+        --color-background: #1f1d1c;
+    }
 }

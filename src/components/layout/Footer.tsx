@@ -2,7 +2,7 @@ import Logo from '../../assets/Quincy_Golf_Lounge_Logo.svg';
 
 export default function Footer() {
     return (
-        <footer className="w-full py-12 text-brand-cream bg-[#1A2E1E]">
+        <footer className="w-full py-12 text-brand-dark dark:text-brand-cream bg-brand-cream dark:bg-brand-dark">
             <div className="container px-12 mx-auto">
                 {/* Info Section */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-9 lg:gap-12 max-w-5xl mx-auto">
@@ -71,7 +71,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="pt-16 pb-8 text-center text-brand-cream/40 font-main text-sm mt-12 border-t border-brand-cream/5">
+            <div className="pt-16 pb-8 text-center text-brand-dark/40 dark:text-brand-cream/40 font-main text-sm mt-12 border-t border-brand-cream/5">
                 <p>&copy; {new Date().getFullYear()} Quincy Golf Lounge. All rights reserved.</p>
             </div>
         </footer>
