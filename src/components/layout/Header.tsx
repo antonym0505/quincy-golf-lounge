@@ -5,7 +5,7 @@ import NameWhite from '../../assets/name_white.svg';
 
 export default function Header() {
     return (
-        <header className="relative h-screen bg-[url('/src/assets/birmingham-mail.png')] bg-cover lg:bg-contain bg-center bg-no-repeat">
+        <header className="relative h-screen bg-[url('/src/assets/birmingham-mail.webp')] bg-cover lg:bg-contain bg-center bg-no-repeat">
             <div className="absolute inset-0 bg-brand-black/40 backdrop-blur-[1px]"></div>
             <div className="relative z-10 flex flex-col h-full">
                 <nav className="px-4 py-4 flex justify-end mx-auto">
