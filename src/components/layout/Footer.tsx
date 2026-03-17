@@ -7,7 +7,7 @@ export default function Footer() {
                 {/* Info Section */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-9 lg:gap-12 max-w-5xl mx-auto">
                     <div className="flex-shrink-0 h-full justify-self-center md:justify-self-start">
-                        <img src={Logo} alt="Quincy Golf Lounge" className="h-full w-auto md:shadow-info" />
+                        <img src={Logo} alt="Quincy Golf Lounge" className="h-full w-auto" />
                     </div>
                     {/* Contact */}
                     <div className="justify-self-center md:justify-self-start text-center md:text-left">
